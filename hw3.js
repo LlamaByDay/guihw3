@@ -1,3 +1,5 @@
+// github.com/llamabyday
+
 var hMinBox = document.getElementById('horizontalMin');
 var hMaxBox = document.getElementById('horizontalMax');
 var vMinBox = document.getElementById('verticalMin');
@@ -10,12 +12,6 @@ var tableScroll = document.getElementById('tableScroll');
 var rangeErrorString = "Please enter a number between 99 and -99.";
 var sameErrorString = "Please enter two different values.";
 var emptyErrorString = "Please enter a number.";
-
-
-/*submitButton.addEventListener("click", (event) => {
-    console.log('test2');
-
-});*/
 
 function buttonClicked() {
     var hMin = hMinBox.value;
