@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="hw3.css"/>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Build a Table</h1>
+            <div class="bodyAlign">
+                
+                <div class="formDiv">
+                    <form>
+                        <p>Enter a horizontal range for the table:</p>
+                        <p class="error" id="horizontalError"></p>
+                        <div>
+                            <input class="valid" type="number" id="horizontalMin">
+                            <span>-</span>
+                            <input class="valid" type="number" id="horizontalMax">
+                        </div>
+                        <p>Enter a vertical range for the table:</p>
+                        <p class="error" id="verticalError"></p>
+                        <div>
+                            <input class="valid" type="number" id="verticalMin">
+                            <span>-</span>
+                            <input class="valid" type="number" id="verticalMax"><br><br>
+                        </div>
+                        <button type="button" id="submitButton" onclick="buttonClicked()">Display Table</button>
+                    </form>
+                </div>
+                <div class="pDiv">
+                    <p>Create a custom multiplication table by entering the vertical and horizontal ranges in the spaces below. Values must be between 99 and -99.</p>
+                </div>
+            </div>
+        </div>
+        <div id="tableScroll">
+            <table id="multTable">
+            </table>
+        </div>
+        <script src="hw3.js"></script>
+    </body>
+</html>

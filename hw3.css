@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+    color: skyblue;
+    font-family: Arial, Helvetica, sans-serif
+}
+.main {
+    margin: 50px 50px 0px 50px;
+}
+h1 {
+    border-color: lightskyblue;
+    border-style: solid;
+    border-width: 4px;
+    background-color: black;
+    color: lightskyblue;
+    width: fit-content;
+    padding: 15px 20px 10px 20px;
+    font-size: 48px;
+    font-style: bold;
+}
+.bodyAlign {
+    display: grid;
+    max-width: 800px;
+}
+.formDiv {
+    grid-column: 1;
+    grid-row: 2;
+}
+.pDiv {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 310px;
+    margin-left: 52px;
+    margin-top: 10px;
+    border: solid lightskyblue 3px;
+}
+.pDiv > p {
+    margin: 10px;
+}
+form {
+    margin:  30px 50px 30px 50px;
+    padding: 10px;
+    border-style: double;
+    border-width: 8px;
+    width: fit-content;
+    display: block;
+    text-align: center;
+    background-color: lightskyblue;
+    color: black;
+}
+form > p {
+    margin: 10px;
+}
+input {
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    width: 40px;
+    text-align:center;
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+#submitButton {
+    margin: 0 0 10px 0;
+}
+.error{
+    color:red;
+}
+.invalid {
+    border-color:red;
+    border-style:solid ;
+    padding:2px;
+}
+button {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.tableScroll {
+    overflow-x: scroll;
+    margin: 0px 46px 46px 46px;
+    max-height: 86vh;
+    border: double black 8px;
+    background-color: lightskyblue;
+    max-width: fit-content;
+    overscroll-behavior: none;
+}
+table {
+    border-collapse: seperate;
+    border-spacing: 0;
+    /*margin: auto;
+    margin: 40px;*/
+}
+td {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    border-style:solid;
+    border-color: black;
+    border-width: 1.5px;
+    text-align: center;
+    color: black;
+}
+tr:first-child > td:not(td:first-child) {
+    background-color: black;
+    color: lightskyblue;
+    border-color: black;
+    position: sticky;
+    top: 0;
+    &:not(td:last-child) {
+        border-right-color: lightskyblue;
+    }
+}
+tr:not(tr:first-child) {
+    td:first-child {
+        background-color: black;
+        color: lightskyblue;
+        border-color: black;
+        position:sticky;
+        left:0;
+    }
+    &:not(tr:last-child) > td:first-child {
+        border-bottom-color: lightskyblue;
+    }
+}
+tr:not(tr:first-child) > td:not(td:first-child) {
+    background-color: lightskyblue;
+}
+tr:first-child > td:first-child {
+    background-color: lightskyblue;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
